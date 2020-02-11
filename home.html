@@ -1,0 +1,28 @@
+<html>
+<head>
+<title>Login Form</title>
+<link rel="stylesheet" type="text/css" href="nan.css">
+<body>
+<div class="loginbox">
+<img src="3.png" width="200" height="70" class="avator">
+<h1>Login Here</h1>
+<form action="navi.html">
+<p>User-name</p>
+<input type="text" name="username" placeholder="Enter username" >
+<p>Password</p>
+<input type="password" name="password" placeholder="Enter password" required x-moz-errormessage="enter your password"></br></br>
+<input type="submit" name="" value="Login">
+<a href="#">Lost Your pasword?</a></br>
+<a href="#">don't have an account</a>
+
+</form>
+<?php
+if(isset($_POST['error'])==true){
+	echo'<font color="#FF000"><p align="center">sorry ur username and password are incorrect</p></font>';
+}
+?>
+
+</div>
+
+</head>
+</html>
